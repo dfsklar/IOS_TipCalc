@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6842BBEA1B87D28C00DB1E03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6842BBE91B87D28C00DB1E03 /* AppDelegate.swift */; };
+		6842BBEC1B87D28C00DB1E03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6842BBEB1B87D28C00DB1E03 /* ViewController.swift */; };
+		6842BBEF1B87D28C00DB1E03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6842BBED1B87D28C00DB1E03 /* Main.storyboard */; };
+		6842BBF11B87D28C00DB1E03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6842BBF01B87D28C00DB1E03 /* Images.xcassets */; };
+		6842BBF41B87D28C00DB1E03 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6842BBF21B87D28C00DB1E03 /* LaunchScreen.xib */; };
+		6842BC001B87D28C00DB1E03 /* TipEaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6842BBFF1B87D28C00DB1E03 /* TipEaseTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6842BBFA1B87D28C00DB1E03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6842BBDC1B87D28C00DB1E03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6842BBE31B87D28C00DB1E03;
+			remoteInfo = TipEase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6842BBE41B87D28C00DB1E03 /* TipEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6842BBE81B87D28C00DB1E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6842BBE91B87D28C00DB1E03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6842BBEB1B87D28C00DB1E03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6842BBEE1B87D28C00DB1E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6842BBF01B87D28C00DB1E03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6842BBF31B87D28C00DB1E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6842BBF91B87D28C00DB1E03 /* TipEaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipEaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6842BBFE1B87D28C00DB1E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6842BBFF1B87D28C00DB1E03 /* TipEaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipEaseTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6842BBE11B87D28C00DB1E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6842BBF61B87D28C00DB1E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6842BBDB1B87D28C00DB1E03 = {
+			isa = PBXGroup;
+			children = (
+				6842BBE61B87D28C00DB1E03 /* TipEase */,
+				6842BBFC1B87D28C00DB1E03 /* TipEaseTests */,
+				6842BBE51B87D28C00DB1E03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6842BBE51B87D28C00DB1E03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6842BBE41B87D28C00DB1E03 /* TipEase.app */,
+				6842BBF91B87D28C00DB1E03 /* TipEaseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6842BBE61B87D28C00DB1E03 /* TipEase */ = {
+			isa = PBXGroup;
+			children = (
+				6842BBE91B87D28C00DB1E03 /* AppDelegate.swift */,
+				6842BBEB1B87D28C00DB1E03 /* ViewController.swift */,
+				6842BBED1B87D28C00DB1E03 /* Main.storyboard */,
+				6842BBF01B87D28C00DB1E03 /* Images.xcassets */,
+				6842BBF21B87D28C00DB1E03 /* LaunchScreen.xib */,
+				6842BBE71B87D28C00DB1E03 /* Supporting Files */,
+			);
+			path = TipEase;
+			sourceTree = "<group>";
+		};
+		6842BBE71B87D28C00DB1E03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6842BBE81B87D28C00DB1E03 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6842BBFC1B87D28C00DB1E03 /* TipEaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				6842BBFF1B87D28C00DB1E03 /* TipEaseTests.swift */,
+				6842BBFD1B87D28C00DB1E03 /* Supporting Files */,
+			);
+			path = TipEaseTests;
+			sourceTree = "<group>";
+		};
+		6842BBFD1B87D28C00DB1E03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6842BBFE1B87D28C00DB1E03 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6842BBE31B87D28C00DB1E03 /* TipEase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6842BC031B87D28C00DB1E03 /* Build configuration list for PBXNativeTarget "TipEase" */;
+			buildPhases = (
+				6842BBE01B87D28C00DB1E03 /* Sources */,
+				6842BBE11B87D28C00DB1E03 /* Frameworks */,
+				6842BBE21B87D28C00DB1E03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TipEase;
+			productName = TipEase;
+			productReference = 6842BBE41B87D28C00DB1E03 /* TipEase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6842BBF81B87D28C00DB1E03 /* TipEaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6842BC061B87D28C00DB1E03 /* Build configuration list for PBXNativeTarget "TipEaseTests" */;
+			buildPhases = (
+				6842BBF51B87D28C00DB1E03 /* Sources */,
+				6842BBF61B87D28C00DB1E03 /* Frameworks */,
+				6842BBF71B87D28C00DB1E03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6842BBFB1B87D28C00DB1E03 /* PBXTargetDependency */,
+			);
+			name = TipEaseTests;
+			productName = TipEaseTests;
+			productReference = 6842BBF91B87D28C00DB1E03 /* TipEaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6842BBDC1B87D28C00DB1E03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "David Sklar";
+				TargetAttributes = {
+					6842BBE31B87D28C00DB1E03 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					6842BBF81B87D28C00DB1E03 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 6842BBE31B87D28C00DB1E03;
+					};
+				};
+			};
+			buildConfigurationList = 6842BBDF1B87D28C00DB1E03 /* Build configuration list for PBXProject "TipEase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6842BBDB1B87D28C00DB1E03;
+			productRefGroup = 6842BBE51B87D28C00DB1E03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6842BBE31B87D28C00DB1E03 /* TipEase */,
+				6842BBF81B87D28C00DB1E03 /* TipEaseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6842BBE21B87D28C00DB1E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6842BBEF1B87D28C00DB1E03 /* Main.storyboard in Resources */,
+				6842BBF41B87D28C00DB1E03 /* LaunchScreen.xib in Resources */,
+				6842BBF11B87D28C00DB1E03 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6842BBF71B87D28C00DB1E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6842BBE01B87D28C00DB1E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6842BBEC1B87D28C00DB1E03 /* ViewController.swift in Sources */,
+				6842BBEA1B87D28C00DB1E03 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6842BBF51B87D28C00DB1E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6842BC001B87D28C00DB1E03 /* TipEaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6842BBFB1B87D28C00DB1E03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6842BBE31B87D28C00DB1E03 /* TipEase */;
+			targetProxy = 6842BBFA1B87D28C00DB1E03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6842BBED1B87D28C00DB1E03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6842BBEE1B87D28C00DB1E03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6842BBF21B87D28C00DB1E03 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6842BBF31B87D28C00DB1E03 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6842BC011B87D28C00DB1E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6842BC021B87D28C00DB1E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6842BC041B87D28C00DB1E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TipEase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6842BC051B87D28C00DB1E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TipEase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6842BC071B87D28C00DB1E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TipEaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipEase.app/TipEase";
+			};
+			name = Debug;
+		};
+		6842BC081B87D28C00DB1E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TipEaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipEase.app/TipEase";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6842BBDF1B87D28C00DB1E03 /* Build configuration list for PBXProject "TipEase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6842BC011B87D28C00DB1E03 /* Debug */,
+				6842BC021B87D28C00DB1E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6842BC031B87D28C00DB1E03 /* Build configuration list for PBXNativeTarget "TipEase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6842BC041B87D28C00DB1E03 /* Debug */,
+				6842BC051B87D28C00DB1E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6842BC061B87D28C00DB1E03 /* Build configuration list for PBXNativeTarget "TipEaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6842BC071B87D28C00DB1E03 /* Debug */,
+				6842BC081B87D28C00DB1E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6842BBDC1B87D28C00DB1E03 /* Project object */;
+}
