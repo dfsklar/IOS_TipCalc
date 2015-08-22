@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var feedbackTipPercentage: UILabel!
     
     var enteredAmountInDollars : Float = 0.00;
+    var enteredTipPerc : Int = 15;
     var numberFormatter = NSNumberFormatter();
     
     override func viewDidLoad() {
@@ -28,7 +29,7 @@ class ViewController: UIViewController {
     
     func recompute() {
         // Now obtain the tip amount and do the final calculation
-        let tip = happinessSlider.value * enteredAmountInDollars;
+        let tip = Float(enteredTipPerc) * enteredAmountInDollars / 100.0;
         outputTipDisplay.text = numberFormatter.stringFromNumber(tip);
         outputTotalDisplay.text = numberFormatter.stringFromNumber(enteredAmountInDollars + tip);
     }
@@ -49,8 +50,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onHappySliderChanged(sender: UISlider) {
-        let percAsInteger : Int = Int(happinessSlider.value * 100.0);
-        feedbackTipPercentage.text = String(percAsInteger) + "%";
+        enteredTipPerc = Int(happinessSlider.value * 100.0);
+        feedbackTipPercentage.text = String(enteredTipPerc) + "%";
         recompute();
     }
     
