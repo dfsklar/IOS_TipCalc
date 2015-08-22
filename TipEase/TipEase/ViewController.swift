@@ -9,52 +9,48 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var dwqvdfew: UILabel!
 
     @IBOutlet weak var outputTable: UITableView!
     @IBOutlet weak var progressDisplayer: UIProgressView!
     @IBOutlet weak var happinessSlider: UISlider!
     @IBOutlet weak var amountEntryBox: UITextField!
+    @IBOutlet weak var outputTotalDisplay: UILabel!
+    @IBOutlet weak var outputTipDisplay: UILabel!
+    
+    var enteredAmountInDollars : Float = 0.00;
+    var numberFormatter = NSNumberFormatter();
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        numberFormatter.positiveFormat = "0.00";
     }
     
     func recompute() {
-        
-        var enteredAmountInDollars : Float = 0.00;
-        
+        // Now obtain the tip amount and do the final calculation
+        let final = happinessSlider.value * enteredAmountInDollars;
+    }
+
+    @IBAction func onBillAmountChanged(sender: UITextField) {
         // Update the "smart text field" by automatically converting the entered
         // stream of digits into a DDDD.CC floating-point representation.
         let textStrippedOfDots = amountEntryBox.text.stringByReplacingOccurrencesOfString(
             ".",
             withString: "",
             options: NSStringCompareOptions.LiteralSearch, range: nil);
-
         if let enteredAmountInCents = textStrippedOfDots.toInt() {
             enteredAmountInDollars = Float(enteredAmountInCents) / 100.0;
         }
-        
-        let nf = NSNumberFormatter()
-        nf.positiveFormat = "0.00";
+        let nf = numberFormatter;
         let s2 = nf.stringFromNumber(enteredAmountInDollars);
         amountEntryBox.text = s2;
-        // println(enteredAmountInDollars);
-        
-        // Now obtain the tip amount and do the final calculation
-        let final = happinessSlider.value * enteredAmountInDollars;
-    }
 
-    @IBAction func onBillAmountChanged(sender: UITextField) {
-        println("HERE");
-        self.recompute();
+        recompute();
     }
-    
     
     @IBAction func onHappySliderChanged(sender: UISlider) {
-        let valFloat = happinessSlider.value;
-        print(valFloat);
+        recompute();
     }
     
     override func didReceiveMemoryWarning() {
