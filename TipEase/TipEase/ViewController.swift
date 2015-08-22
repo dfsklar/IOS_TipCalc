@@ -22,21 +22,28 @@ class ViewController: UIViewController {
     }
     
     func recompute() {
-        let xyz : Float = Float(334) / 10.0;
+        
+        var enteredAmountInDollars : Float = 0.00;
+        
+        // Update the "smart text field" by automatically converting the entered
+        // stream of digits into a DDDD.CC floating-point representation.
         let textStrippedOfDots = amountEntryBox.text.stringByReplacingOccurrencesOfString(
             ".",
             withString: "",
             options: NSStringCompareOptions.LiteralSearch, range: nil);
 
         if let enteredAmountInCents = textStrippedOfDots.toInt() {
-            let enteredAmountInDollars = (Float(enteredAmountInCents) / 100.0);
-            let nf = NSNumberFormatter()
-            nf.numberStyle = .DecimalStyle
-            // Configure the number formatter to your liking
-            let s2 = nf.stringFromNumber(enteredAmountInDollars);
-            amountEntryBox.text = s2;
-            println(enteredAmountInDollars);
+            enteredAmountInDollars = Float(enteredAmountInCents) / 100.0;
         }
+        
+        let nf = NSNumberFormatter()
+        nf.positiveFormat = "0.00";
+        let s2 = nf.stringFromNumber(enteredAmountInDollars);
+        amountEntryBox.text = s2;
+        // println(enteredAmountInDollars);
+        
+        // Now obtain the tip amount and do the final calculation
+        let final = happinessSlider.value * enteredAmountInDollars;
     }
 
     @IBAction func onBillAmountChanged(sender: UITextField) {
