@@ -9,14 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var dwqvdfew: UILabel!
-
     @IBOutlet weak var outputTable: UITableView!
     @IBOutlet weak var progressDisplayer: UIProgressView!
     @IBOutlet weak var happinessSlider: UISlider!
     @IBOutlet weak var amountEntryBox: UITextField!
     @IBOutlet weak var outputTotalDisplay: UILabel!
     @IBOutlet weak var outputTipDisplay: UILabel!
+    @IBOutlet weak var feedbackTipPercentage: UILabel!
     
     var enteredAmountInDollars : Float = 0.00;
     var numberFormatter = NSNumberFormatter();
@@ -29,7 +28,9 @@ class ViewController: UIViewController {
     
     func recompute() {
         // Now obtain the tip amount and do the final calculation
-        let final = happinessSlider.value * enteredAmountInDollars;
+        let tip = happinessSlider.value * enteredAmountInDollars;
+        outputTipDisplay.text = numberFormatter.stringFromNumber(tip);
+        outputTotalDisplay.text = numberFormatter.stringFromNumber(enteredAmountInDollars + tip);
     }
 
     @IBAction func onBillAmountChanged(sender: UITextField) {
@@ -42,14 +43,14 @@ class ViewController: UIViewController {
         if let enteredAmountInCents = textStrippedOfDots.toInt() {
             enteredAmountInDollars = Float(enteredAmountInCents) / 100.0;
         }
-        let nf = numberFormatter;
-        let s2 = nf.stringFromNumber(enteredAmountInDollars);
-        amountEntryBox.text = s2;
+        amountEntryBox.text = numberFormatter.stringFromNumber(enteredAmountInDollars);
 
         recompute();
     }
     
     @IBAction func onHappySliderChanged(sender: UISlider) {
+        let percAsInteger : Int = Int(happinessSlider.value * 100.0);
+        feedbackTipPercentage.text = String(percAsInteger) + "%";
         recompute();
     }
     
