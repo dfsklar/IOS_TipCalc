@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var outputTotalDisplay: UILabel!
     @IBOutlet weak var outputTipDisplay: UILabel!
     @IBOutlet weak var feedbackTipPercentage: UILabel!
+
+    @IBAction func onTap(sender: AnyObject) {
+        view.endEditing(true);
+    }
     
     var enteredAmountInDollars : Float = 0.00;
     var enteredTipPerc : Int = 15;
