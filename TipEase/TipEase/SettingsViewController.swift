@@ -20,6 +20,8 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        println("SettingsView did load")
 
         // Do any additional setup after loading the view.
         var defaults = NSUserDefaults.standardUserDefaults()
@@ -27,7 +29,8 @@ class SettingsViewController: UIViewController {
         if (val < 15) {
             val = 15;
         }
-        defaultTipDisplay.text = String(val) + "%";
+        defaultTipDisplay.text = String(val) + "%"
+        sliderDefaultPerc.setValue(Float(val)/100.0, animated: false)
     }
 
     override func didReceiveMemoryWarning() {

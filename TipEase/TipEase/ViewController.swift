@@ -17,6 +17,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var outputTipDisplay: UILabel!
     @IBOutlet weak var feedbackTipPercentage: UILabel!
 
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        println("MainView will appear")
+        // Init or fetch the persistent storage of the default perc
+        var defaults = NSUserDefaults.standardUserDefaults()
+        var val = defaults.integerForKey(GlobalConstants.keyname)
+        if (val < 15) {
+            // This key apparently wasn't even in pers. storage yet!
+            val = 15
+            defaults.setInteger(val, forKey:GlobalConstants.keyname)
+            defaults.synchronize()
+        }
+        // Initialize the slider and feedback to match the default
+        feedbackTipPercentage.text = String(val) + "%"
+        happinessSlider.setValue(Float(val)/100.0, animated: true)
+    }
+   
+    
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true);
     }
